@@ -1,0 +1,112 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+/* Urbanist Font */
+body{
+    font-family: "Urbanist", serif;
+    font-style: normal;
+}
+/* .mockupimg{
+    display: block !important;
+} */
+
+
+/* React Calender CSS */
+.react-calendar{
+    border: 1px solid transparent !important;
+    font-family: "Urbanist", serif !important;
+    font-style: normal;
+}
+.react-calendar__tile--active {
+    background: #7B1984 !important;
+    border-radius: 9px;
+    color: white;
+}
+
+.react-calendar__tile:enabled:hover, .react-calendar__tile:enabled:focus {
+    background-color: #F8B1FF !important;
+    border-radius: 9px ;
+}
+
+.ql-toolbar.ql-snow{
+    border-radius: 8px 8px 0px 0px !important;
+    border-bottom: 0px !important;
+}
+.ql-container.ql-snow{
+    border-radius: 0px 0px 8px 8px !important;
+    min-height: 100px;
+}
+/* input[type="date"]::-webkit-calendar-picker-indicator {
+    position: absolute;
+    right: 0;
+    cursor: pointer;
+  } */
+/* 
+  input[type="date"] {
+    color: transparent; 
+    text-indent: -9999px; 
+    cursor: pointer;
+  } */
+
+  /* input[type="date"]:focus {
+    outline: none; 
+  } */
+  /* input[type="date"] {
+    appearance: none; 
+    -webkit-appearance: none;
+    -moz-appearance: none; 
+    padding: 10px;
+    font-size: 16px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    background-color: #fff;
+    position: relative;
+  } */
+
+  /* Remove default calendar icon */
+  /* input[type="date"]::-webkit-calendar-picker-indicator {
+    display: none;
+  } */
+
+  /* Wrapper for custom icon */
+  /* .date-input-wrapper {
+    position: relative;
+    display: inline-block;
+  } */
+
+  
+  /* .date-input-wrapper::after {
+    content: url('./assets/calender_icon.svg');
+    position: absolute;
+    right: 10px;
+    top: 50%;
+    transform: translateY(-50%);
+    pointer-events: none;
+  } */
+
+  /* Make input clickable even over the icon */
+  /* input[type="date"] {
+    padding-right: 40px;
+  } */
+@media screen and (max-width:1100px){
+    .mockupimg{
+        top: 50%;
+        transform: translate(-0%, -60%);
+    }
+}
+
+
+@media screen and (max-width:700px){
+    .mockupimg{
+        display: none;
+    }
+    .txt-dec{
+        display: none;
+    }
+    .mbl-bg{
+        background-image: url('../src/assets/mobile_bg.png');
+        background-repeat: no-repeat;
+    }
+}
+
