@@ -3,7 +3,7 @@ import { SingleTask } from "./SingleTask";
 import { CgChevronDown } from "react-icons/cg";
 import { CgChevronUp } from "react-icons/cg";
 import { useDispatch, useSelector } from "react-redux";
-import { changeMobileLayout, HandleSmallScreen, selectLayout } from "../../redux/slices/ToDoSlice";
+import {  HandleSmallScreen, selectLayout } from "../../redux/slices/ToDoSlice";
 import { BoardLayout } from "../BoardLayout";
 import { AddTask } from "./AddTask";
 export interface Task {

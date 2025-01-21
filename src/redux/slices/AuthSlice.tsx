@@ -9,6 +9,7 @@ interface authState {
     email: string | null;
     profileImg: string | null,
   };
+  error : boolean | any
 }
 
 const initialState: authState = {
@@ -16,8 +17,10 @@ const initialState: authState = {
     userName: null,
     email: null,
     profileImg:   null,
+    
 
   },
+  error : false
 };
 
 export const HandleSignIn = createAsyncThunk("auth/signin", async () => {
@@ -49,8 +52,9 @@ export const AuthSlice = createSlice({
       .addCase(HandleSignIn.fulfilled, (state, action) => {
         state.userDetails = action.payload.userDetails;
       })
-      .addCase(HandleSignIn.rejected, (state , action) => {
+      .addCase(HandleSignIn.rejected, (state,action) => {
         console.log("The Error Is", action.payload);
+        state.error = action.payload
       });
   },
 });
@@ -58,4 +62,5 @@ export const AuthSlice = createSlice({
 export const AuthReducer = AuthSlice.reducer;
 export const { HandleLogout } = AuthSlice.actions;
 export const selectUser = (state: RootState) => state.Auth.userDetails;
+export const selelctError = (state: RootState) => state.Auth.error
 

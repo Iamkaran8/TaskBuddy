@@ -1,15 +1,15 @@
 import { AddButton } from "./AddButton";
 import { CancleButton } from "./CancleButton";
-import calenderIcon from "../../assets/calender_icon.svg";
+// import calenderIcon from "../../assets/calender_icon.svg";
 import PlusIcon from "../../assets/plus.svg";
 import { useState } from "react";
-import Calendar from "react-calendar";
+// import Calendar from "react-calendar";
 import "react-calendar/dist/Calendar.css";
 import { PushNewTask } from "../../redux/slices/ToDoSlice";
 import { useDispatch } from "react-redux";
 
-type ValuePiece = Date | null;
-type Value = ValuePiece | [ValuePiece, ValuePiece];
+// type ValuePiece = Date | null;
+// type Value = ValuePiece | [ValuePiece, ValuePiece];
 
 export const AddTaskInput = () => {
   const [open, setOpen] = useState({
